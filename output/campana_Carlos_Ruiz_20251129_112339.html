@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña - Carlos Ruiz</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .header p { opacity: 0.9; }
+        .content { padding: 40px; }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .metric {
+            display: inline-block;
+            margin: 10px 15px 10px 0;
+        }
+        .metric-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            display: block;
+        }
+        .metric-value {
+            color: #212529;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .campana-preview {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .campana-asunto {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+        .campana-mensaje {
+            line-height: 1.6;
+            color: #495057;
+            white-space: pre-line;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        ul { margin-left: 20px; line-height: 1.8; }
+        .log-section {
+            background: #212529;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .log-entry {
+            margin-bottom: 5px;
+        }
+        .log-time { color: #6c757d; }
+        .log-estado { color: #ffc107; font-weight: bold; }
+        .log-msg { color: #00ff00; }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Campaña Generada</h1>
+            <p>Agente Inteligente CRM - NTT DATA Hackathon</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Generado: 2025-11-29T11:23:39.091526</p>
+        </div>
+        
+        <div class="content">
+            <!-- SECCIÓN CLIENTE -->
+            <div class="section">
+                <h2>👤 Perfil del Cliente</h2>
+                <p><strong>Nombre:</strong> Carlos Ruiz</p>
+                <p><strong>Sector:</strong> <span class="badge">Tecnología</span></p>
+                <p><strong>Gasto Promedio:</strong> $1,500.00</p>
+                <p><strong>Riesgo de Abandono:</strong> Bajo</p>
+            </div>
+            
+            <!-- SECCIÓN SEGMENTACIÓN -->
+            <div class="section">
+                <h2>🎯 Segmentación Inteligente</h2>
+                <p><strong>Segmento Asignado:</strong> <span class="badge">EARLY ADOPTER</span></p>
+                <p><strong>Nivel de Confianza:</strong> 88.0%</p>
+                <p><strong>Score Social:</strong> 8.2/10</p>
+                <p style="margin-top: 15px;"><strong>Razones de Segmentación:</strong></p>
+                <ul>
+                    <li>Perfil tecnológico con alta actividad social (score: 8.2)</li><li>Intereses: IA, Startups, Gaming</li>
+                </ul>
+            </div>
+            
+            <!-- SECCIÓN CAMPAÑA -->
+            <div class="section">
+                <h2>📧 Campaña Seleccionada</h2>
+                <p><strong>Nombre:</strong> Engagement en Redes</p>
+                <p><strong>Canal:</strong> <span class="badge">dm_instagram</span></p>
+                <p><strong>Descuento Aplicado:</strong> 20%</p>
+                
+                <div class="campana-preview">
+                    <div class="campana-asunto">✉️ 👋 Carlos Ruiz, vimos tu post sobre IA</div>
+                    <div class="campana-mensaje">Hola Carlos Ruiz! 👋
+
+Nos encantó tu reciente post sobre IA.
+
+Tenemos algo que podría interesarte:
+nuestra plataforma está diseñado para personas como tú que buscan eficiencia operativa.
+
+¿Te gustaría conocer más? Te regalamos 20% de descuento.
+
+[Más info]
+
+— Equipo Social Media</div>
+                    <a href="#" class="cta-button">Más info</a>
+                </div>
+            </div>
+            
+            <!-- MÉTRICAS ESPERADAS -->
+            <div class="section">
+                <h2>📊 Métricas Esperadas</h2>
+                <div class="metric">
+                    <span class="metric-label">Open Rate</span>
+                    <span class="metric-value">52.0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">CTR</span>
+                    <span class="metric-value">23.4%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Conversión</span>
+                    <span class="metric-value">6.0%</span>
+                </div>
+            </div>
+            
+            <!-- LOG DE EJECUCIÓN -->
+            <div class="section">
+                <h2>📝 Log de Ejecución del Agente</h2>
+                <div class="log-section">
+                    
+            <div class="log-entry">
+                <span class="log-time">11:23:38</span>
+                <span class="log-estado">INACTIVO</span>
+                <span class="log-msg">Iniciando pipeline para Carlos Ruiz</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:38</span>
+                <span class="log-estado">INGESTA</span>
+                <span class="log-msg">Cargando datos de Carlos Ruiz</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:38</span>
+                <span class="log-estado">INGESTA</span>
+                <span class="log-msg">Cliente encontrado: Carlos Ruiz</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:38</span>
+                <span class="log-estado">PERFIL</span>
+                <span class="log-msg">Consultando perfil social del cliente ID 1</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">PERFIL</span>
+                <span class="log-msg">Perfil obtenido de Twitter/X</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">SEGMENTO</span>
+                <span class="log-msg">Ejecutando motor de segmentación</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">SEGMENTO</span>
+                <span class="log-msg">Cliente asignado a: EARLY_ADOPTER</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">CAMPANA</span>
+                <span class="log-msg">Generando campaña personalizada</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">CAMPANA</span>
+                <span class="log-msg">Campaña seleccionada: SOCIAL_ENGAGEMENT</span>
+            </div>
+            
+            <div class="log-entry">
+                <span class="log-time">11:23:39</span>
+                <span class="log-estado">CAMPANA</span>
+                <span class="log-msg">Campaña personalizada generada</span>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🤖 Generado automáticamente por el Agente CRM Inteligente</p>
+            <p>NTT DATA GenAI Hackathon 2025</p>
+        </div>
+    </div>
+</body>
+</html>

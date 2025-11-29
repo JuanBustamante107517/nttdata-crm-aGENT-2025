@@ -1,6 +1,9 @@
-ID,Nombre,Edad,Sector,Historial_Compras
-1,Carlos Ruiz,28,Tecnología,"Laptops, Monitores"
-2,Maria Gomez,35,Salud,"Libros de Yoga, Vitaminas"
-3,Empresa Tech SAC,5,B2B,"Servidores, Licencias Software"
-4,Juan Perez,50,Finanzas,"Relojes de Lujo, Trajes"
-5,Ana Torres,22,Estudiante,"Audífonos, Mochilas"
+ID,Nombre,Edad,Sector,Historial_Compras,Gasto_Promedio,Riesgo_Abandono
+1,Carlos Ruiz,28,Tecnología,"Laptops, Monitores, Teclados",1500,Bajo
+2,Maria Gomez,35,Salud,"Libros de Yoga, Vitaminas, Bandas",450,Medio
+3,Empresa Tech SAC,5,B2B,"Servidores, Licencias, Consultoría",25000,Bajo
+4,Juan Perez,50,Finanzas,"Relojes, Trajes, Accesorios",3200,Alto
+5,Ana Torres,22,Estudiante,"Audífonos, Mochilas, Cuadernos",200,Medio
+6,Roberto Silva,42,Retail,"Software POS, Capacitaciones",8000,Bajo
+7,Laura Vega,31,Marketing,"Herramientas Analytics, Cursos",1200,Medio
+8,Pedro Morales,38,Manufactura,"Maquinaria, Repuestos",15000,Bajo

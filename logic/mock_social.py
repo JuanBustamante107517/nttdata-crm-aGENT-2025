@@ -140,15 +140,3 @@ class MockSocialAPI:
         
         return round(final_score, 2)
 
-
-# Ejemplo de uso
-if __name__ == "__main__":
-    api = MockSocialAPI()
-    
-    for cliente_id in [1, 2, 3]:
-        perfil = api.obtener_perfil_social(cliente_id)
-        score = api.calcular_score_social(perfil)
-        print(f"\nCliente {cliente_id}:")
-        print(f"  Red: {perfil['red_principal']}")
-        print(f"  Intereses: {perfil['intereses']}")
-        print(f"  Score Social: {score}/10")
