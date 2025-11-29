@@ -9,6 +9,10 @@ from datetime import datetime
 import sys
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 # Configurar path para imports
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 

@@ -68,7 +68,7 @@ MENSAJE MEJORADO:
 """
             
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-3.5",
                 messages=[
                     {"role": "system", "content": "Eres un copywriter experto en marketing digital."},
                     {"role": "user", "content": prompt}
@@ -82,7 +82,7 @@ MENSAJE MEJORADO:
             return {
                 "mensaje": mensaje_mejorado,
                 "mejorado_con_ia": True,
-                "metodo": "gpt-3.5-turbo",
+                "metodo": "gpt-3.5",
                 "mensaje_original": mensaje_base
             }
             
