@@ -53,25 +53,33 @@ def generar_campana_ia(cliente, info_social):
         return json.loads(contenido)
 
     except Exception as e:
-        # --- MODO RESCATE (SI FALLA) ---
-        print(f"⚠️ Alerta: Usando respuesta de respaldo. Error: {e}")
+        # --- MODO RESCATE (PRODUCTOS REALES DE LA CURACAO) ---
+        print(f"⚠️ Usando respaldo retail. Error: {e}")
         
-        nombre_cliente = cliente['Nombre']
-        sector_cliente = cliente['Sector']
+        # Extraemos el primer nombre para personalizar
+        nombre = str(cliente['Nombre']).split()[0]
         
-        # Generamos una respuesta simulada segura
+        # AQUÍ ESTÁ EL CAMBIO CLAVE:
+        # Fíjate que ahora dice "Laptop Gamer", "iPhone", etc.
+        # Si en tu código dice "Asesoría Personalizada", ¡CÁMBIALO POR ESTO!
         respuestas_backup = [
             {
-                "segmento": "Usuario Digital",
-                "producto_sugerido": "Servicio Cloud Premium",
-                "asunto": f"Oportunidad exclusiva para {nombre_cliente}",
-                "mensaje": f"Tenemos una solución personalizada para el sector {sector_cliente} con un 20% de descuento."
+                "segmento": "Gamer Entusiasta",
+                "producto_sugerido": "Laptop Gamer",  # <--- ESTO ES LO QUE BUSCA EL BOTÓN
+                "asunto": f"¡{nombre}, sube de nivel con esta oferta!",
+                "mensaje": "Sabemos que te gusta la tecnología. Esta Laptop con tarjeta gráfica RTX es lo que necesitas."
             },
             {
-                "segmento": "Cliente VIP",
-                "producto_sugerido": "Asesoría Personalizada",
-                "asunto": "Propuesta de valor única",
-                "mensaje": "Basado en tu historial reciente, hemos seleccionado los mejores productos para optimizar tu negocio."
+                "segmento": "Tech Lover",
+                "producto_sugerido": "iPhone 15",
+                "asunto": "Tecnología de punta en tus manos",
+                "mensaje": "Renueva tu equipo con lo último de Apple. Disponible ahora en tienda."
+            },
+            {
+                "segmento": "Home Cinema",
+                "producto_sugerido": "Smart TV 4K",
+                "asunto": "Cine en casa para ti",
+                "mensaje": "Disfruta de tus series favoritas con la mejor resolución del mercado."
             }
         ]
         
